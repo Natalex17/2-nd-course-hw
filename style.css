@@ -6,8 +6,7 @@
   a {
     text-decoration: none;
   }
-  
-  .body {
+.body {
     font-family: Montserrat, sans-serif; 
   }
 
@@ -25,12 +24,11 @@
     flex-shrink: 0;
     padding-top: 217px;
     padding-bottom: 32px;
-    
+    font-family: Montserrat;
     
 }
 .top {
     background-image: url(img/Rectangle\ 1.jpg);
-    width: 1440px;
     height: 1024px;
     color: #FFF;
     background-repeat: no-repeat;
@@ -41,6 +39,7 @@
 .top__content{
       padding-left: 120px;
       color: #FFF;
+      padding-bottom: 493,29px;
     }
 .top__text{
     color: #FFF;
@@ -77,17 +76,20 @@
     box-sizing: border-box;
     color: #FFF;
 }
-.input::placeholder {
+.header__input::placeholder {
       color: #FFF;
+      text-align: center;
+
 }
 .for {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);   
-    width: 1440px; 
     background: #000915;
     padding-top: 128px;
     padding-bottom: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
    
   }
   
@@ -114,6 +116,7 @@
     align-items: flex-start;
     transition: all 0.5s; 
     border-radius: 16px;
+    
     
   }
 
