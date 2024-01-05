@@ -1,14 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
   }
   
   a {
     text-decoration: none;
   }
+  .center {
+    padding-right: calc(50% - 600px);
+  }
 .body {
     font-family: Montserrat, sans-serif; 
   }
+
 
 .title{
     color: #FFF;
@@ -18,7 +24,6 @@
     line-height: normal;
     display: flex;
     width: 788.778px;
-    height: 125.007px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -105,7 +110,7 @@
     grid-column: span 4;
     color: #FFF;
     text-align: left;
-    font-size: 34px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -116,7 +121,8 @@
     align-items: flex-start;
     transition: all 0.5s; 
     border-radius: 16px;
-    
+    padding-left: 32px;
+    padding-bottom: 32px
     
   }
 
