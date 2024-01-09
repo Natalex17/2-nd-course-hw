@@ -10,7 +10,7 @@ const releaseIfpone1 = 2007;
 alert (`Первый iphone был выпущен в ${releaseIfpone1} году`);
 
 //3.
-let userName = "BrendanEich"; // Имя разработчика javaScript
+const userName = "BrendanEich"; // Имя разработчика javaScript
 alert (`Создатель языка JavaScript ${userName}`);
 
 //4.
