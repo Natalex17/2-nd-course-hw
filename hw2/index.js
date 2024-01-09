@@ -1,17 +1,17 @@
 // 1.
 let ad = 10;
 alert (ad);
-ad = ad + 10;
+ad = 20;
 alert (ad)
-// доработать ?
+
 
 //2.
 const releaseIfpone1 = 2007;
-alert (releaseIfpone1);
+alert (`Первый iphone был выпущен в ${releaseIfpone1} году`);
 
 //3.
 let userName = "BrendanEich"; // Имя разработчика javaScript
-alert (userName);
+alert (`Создатель языка JavaScript ${userName}`);
 
 //4.
 let ap = Number (10);
@@ -55,19 +55,25 @@ alert (age);
 
 //9.
 const User = {
-    name: "Natali",  //string
+    nume: "Natali",  //string
     age: 43,      //number
     isAdmin: true,
-} //надо доработать т додумать не поняла
+}     
+                
 
-//9.1
+// 9.1
+console.log (User)
+User[`city of residence`] = "Chita";
 
 //9.2
+User.age = 35;
 
 //9.3
+delete User [`city of residence`];
+
 
 //9.4
-let info = prompt ( "Что вы хотите узнать о пользователе?", "name");
+let info = prompt ("Что вы хотите узнать о пользователе?");
 console.log(User [info]);
 
 //10
