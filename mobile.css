@@ -6,7 +6,6 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  
   .title {
     display: none;
     text-align: center;
@@ -24,7 +23,12 @@
     line-height: 22px;
     font-size: 14px;
   }
+  .header__input {
+    padding-left: 70.47px;
+    padding-right: 70.47px;
+  }
   .for {
+    display: none;
     flex-wrap: wrap;
   }
   .for__item {
