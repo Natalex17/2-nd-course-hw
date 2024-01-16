@@ -137,3 +137,5 @@
   .for__item_3 {
     background-image: url(img/game3.jpg);
   }
+  
+  @import "mobile"; 
