@@ -1,4 +1,4 @@
-@media (max-width: 375) {
+@media (max-width: 375px) {
   .top__content {
     display: none;
   }
@@ -34,4 +34,6 @@
   .for__item {
     width: 343px;
   }
-}/*# sourceMappingURL=mobile.css.map */
+}
+@import "mobile"
+/*# sourceMappingURL=mobile.css.map */
