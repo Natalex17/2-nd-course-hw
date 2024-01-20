@@ -137,5 +137,8 @@
   .for__item_3 {
     background-image: url(img/game3.jpg);
   }
+  .footer {
+    background: #000915;
+  }
   
   @import "mobile"; 
