@@ -28,7 +28,7 @@ console.log (numeral)
 
 
 
-//Задание 4
+// 4
 //С помощью вложенных циклов создайте многомерный массив вида: 
 //[[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 let arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
@@ -49,7 +49,7 @@ let numb = [1, 1, 1]
 numb.push(2, 2, 2);
 console.log(numb);
 
-//6
+// 6
 let nuM = [9, 8, 7, 'a', 6, 5];
 delete nuM [3]; // удаляем `а`
 nuM = nuM.sort (); // сортируем
@@ -57,7 +57,7 @@ console.log (nuM);
 
 
 
-//Задание 7
+// 7
 let rondom = [9, 8, 7, 6, 5];
 if (rondom.includes(Number (prompt(`Угадай число`)))) {
     alert(`Угадал`)
@@ -67,53 +67,41 @@ if (rondom.includes(Number (prompt(`Угадай число`)))) {
 }
 
 // 8
-//let word ='abcdef'
-//word = word.reverse();
-//console.log(word);
-
-let  word ='abcdef'
-for (let reverse of word) {
-	console.log(word);
-}
-//Необходимо, чтобы программа вывела в консоль 
-//'fedcba'
+const word ='abcdef';
+const reversedWord = word.split(``).reverse().join(``);	
+console.log(reversedWord); // в консоль 'fedcba'
 
 // 9
-Задание 9
-Дан массив: 
-[[1, 2, 3,],[4, 5, 6]]
-.
+const array= [[1, 2, 3,],[4, 5, 6]];
+const flatArray = array.flat(); //flat для преобразования двумерный в одномерный массив
+console.log(flatArray); // в консоль [1, 2, 3, 4, 5, 6]
 
-Выведите в консоль массив вида: 
-[1, 2, 3, 4, 5, 6]
-.
-
-Задание 10
-Создайте массив с произвольными числами (диапазон от 1 до 10). Переберите его с помощью цикла 
-for
- и в каждой итерации выведите в консоль сумму текущего и следующего элементов массива.
-
-Следующий элемент массива можно получить с помощью индекса: 
-i + 1
-. Обратите внимание, что у последнего элемента нет следующего.
-
-Задание 11
-Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
-
-Подсказка
-Задание 12
-Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов.
-
-Пример вызова:
-
-getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
-
-Задание 13
-Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
-
-function filterPositive(array) {
-  // Допишите код функции
+// 10
+const mass = [2, 9, 4, 5, 1, 8]; // массив от1-10
+for ( let i = 0; i < mass.length - 1; i++) {
+	console.log (mass[i]+mass[i + 1]); //сумма текущего и последующего числа
+}
+// 11
+function getSquaredNumbers (arr) {
+	return arr.map(num => num * num);
 }
 
+// 12
+function getLengthWords(words) {
+	return words.map(word => word.length);
+}
+
+// 13
+  function filterPositive(array) {
+
+    const negative = []; 
+
+    for (let i = 0; i < array.length; i++) {
+
+        if (array[i] < 0) {
+            negative.push(array[i]) 
+        }
+    } return negative
+}
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -
