@@ -39,21 +39,21 @@ switch (monthNumber) {
     case 2:
     case 12:
         alert (`Зима`);
-        dreak;
+        break;
         case 3:
         case 4:
         case 5:
-            dreak;
+            break;
             alert (`Весна`);
             case 6:
             case 7:
             case 8:
                     alert (`Лето`);
-                    dreak;
+                    break;
                     case 9:
                     case 10:
                     case 11:
-                        dreak;
+                        break;
                         alert (`Осень`);
 default: alert (`Неизвестный месяц`)
 
