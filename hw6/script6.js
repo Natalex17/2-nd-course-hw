@@ -9,16 +9,16 @@ console.log (numbers [3]); // 10
 const digit = [ 1, 5, 4, 10, 0, 3 ];
 
 for (let i = 0; i < digit.length; i++) {
-	if (digit[i] == 0) break;
 	console.log(digit[i]);
+	if (digit[i] === 10) break;
+	
 }
 
 // 2
 const numbs = [1, 5, 4, 10, 0, 3];
+const index = numbs.indexOf(4);
+console.log(index); //2
 
-numbs.forEach((el, index) => {
-	console.log(`${index}: ${el}`); //2
-});
 
 
 // 3
@@ -31,16 +31,15 @@ console.log (numeral)
 // 4
 //С помощью вложенных циклов создайте многомерный массив вида: 
 //[[1, 1, 1], [1, 1, 1], [1, 1, 1]]
-let arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
-
+let arr = [];
 for (let i = 0; i < 3; i++) {
-	arr[i] = []; // создаем подмассив
+	let innerArr = []; // создаем подмассив
 	
 	for (let j = 0; j < 3; j++) {
-		arr[i].push(j + 1); // заполняем подмассив числами
+		innerArr.push(1); // заполняем подмассив числами
 	}
+	arr.push(innerArr);
 }
-
 console.log(arr);
 
 
@@ -51,8 +50,7 @@ console.log(numb);
 
 // 6
 let nuM = [9, 8, 7, 'a', 6, 5];
-delete nuM [3]; // удаляем `а`
-nuM = nuM.sort (); // сортируем
+nuM.sort((a, b) => a -b).pop();
 console.log (nuM);
 
 
@@ -94,14 +92,16 @@ function getLengthWords(words) {
 // 13
   function filterPositive(array) {
 
-    const negative = []; 
+    let result = []; 
 
     for (let i = 0; i < array.length; i++) {
 
         if (array[i] < 0) {
-            negative.push(array[i]) 
+            negative.filter(array[i]) 
         }
-    } return negative
+    } return result;
 }
+ const filterPositive2 =(array) => array.filter(item => item <0)
+ 
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -
