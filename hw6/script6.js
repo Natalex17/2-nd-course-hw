@@ -104,7 +104,7 @@ function getLengthWords(words) {
  const filterPositive2 =(array) => array.filter(item => item <0)
  
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
-filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -
+filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]
 
 
 // Старая версия фильтра приведёт к ошибке в консоли. Позже надо доработать
