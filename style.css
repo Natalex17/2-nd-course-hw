@@ -66,6 +66,16 @@ a {
   line-height: 32px;
 }
 
+.menu__link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5p;
+}
+
+.header__input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5p;
+}
+
 .header__input {
   border-radius: 30px;
   background: #9C0332;
@@ -142,6 +152,13 @@ a {
   background-image: url(img/game3.jpg);
 }
 
+.seasons {
+  background-color: #000915;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 @media (max-width: 768px) {
   .center {
     padding-left: 16px;
@@ -186,4 +203,4 @@ a {
   .game__item {
     width: 343px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
