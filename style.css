@@ -71,12 +71,12 @@ a {
   box-shadow: 0 0 5p;
 }
 
-.header__input:hover {
+.btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 5p;
 }
 
-.header__input {
+.btn {
   border-radius: 30px;
   background: #9C0332;
   border: 1px solid #9C0332;
@@ -94,12 +94,12 @@ a {
   color: #FFF;
 }
 
-.header__input::-moz-placeholder {
+.btn::-moz-placeholder {
   color: #FFF;
   text-align: center;
 }
 
-.header__input::placeholder {
+.btn::placeholder {
   color: #FFF;
   text-align: center;
 }
@@ -152,14 +152,14 @@ a {
   background-image: url(img/game3.jpg);
 }
 
-.seasons {
+.season {
   background-color: #000915;
   height: 800px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.seasons-box {
+.season-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -168,6 +168,21 @@ a {
   height: 236px;
   margin-right: 135px;
   margin-top: 282px;
+}
+
+.heading {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.season-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #FFF;
 }
 
 .game-box {
