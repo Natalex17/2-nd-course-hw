@@ -154,7 +154,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     
-  }
+}
 .season-box {
     display: inline-flex;
     flex-direction: column;
@@ -220,7 +220,7 @@
       font-size: 14px;
       font-weight: 700;
     }
-    .header__input {
+    .btn {
       margin-left: 70.47px;
       margin-right: 70.47px;
     }
@@ -229,5 +229,31 @@
     }
     .game__item {
       width: 343px;
+    }
+    .season{
+      height: 653.61px;
+      text-align: center;
+    }
+    .season-box{
+      margin-top: 51px;
+    }
+    .heading {
+      color: #FFF;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      padding-left: 66px;
+      padding-right: 66px;
+    }
+    .season-text{
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+      height: 66px;
+    }
+    .svg{   /*как изменить размер svg?*/
+      width: 343px;
+      height: 236px;
     }
   }
