@@ -1,4 +1,4 @@
-@media (max-width: 375) {
+@media (max-width: 768px) {
   .top__content {
     display: none;
   }
@@ -34,16 +34,4 @@
   .game__item {
     width: 343px;
   }
-.heading {
-  text-align: center;
-  font-size: 32px;
-}
-.bottom__text {
-  text-align: center;
-  font-size: 14px;
-}
-.game-box {
-  width: 344px;
-  height: 236px;
-}
 }/*# sourceMappingURL=mobile.css.map */

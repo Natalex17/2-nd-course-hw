@@ -102,7 +102,7 @@
   }
   
   .game {
-    display: flex;
+    display:  flex;
     flex-wrap: wrap;
     gap: 32px;
     background: #000915;
@@ -145,16 +145,33 @@
     background-image: url(img/game2.jpg);
   }
   
-  .game__item_3 {
+.game__item_3 {
     background-image: url(img/game3.jpg);
   }
-  .seasons {
+.seasons {
     background-color: #000915;
     height: 800px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     
   }
+.seasons-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 584px;
+    height: 236px;
+    margin-right: 135px;
+    margin-top: 282px;
+}
+.game-box {
+  width: 485px;
+  height: 333px;
+  margin-top: 233px;
+}
+
+  
   
   @media (max-width: 768px) {
     .center {
