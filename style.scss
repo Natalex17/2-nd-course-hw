@@ -240,6 +240,7 @@
     }
     .season-box{
       margin-top: 51px;
+      
     }
     .heading {
       color: #FFF;
@@ -256,8 +257,17 @@
       width: 343px;
       height: 66px;
     }
-    .image{   /*как изменить размер svg?*/
+    .game-box {
+      width: 343px;
+      height: 236px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 66px;
+    }
+        .image{   
       width: 343px;
       height: 236px;
     }
   }
+  
