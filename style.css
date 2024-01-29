@@ -186,6 +186,11 @@ a {
   color: #FFF;
 }
 
+.image {
+  width: 485px;
+  height: 334px; /*"viewBox="0 0 485 334*/
+}
+
 .game-box {
   width: 485px;
   height: 333px;
@@ -258,7 +263,7 @@ a {
     width: 343px;
     height: 66px;
   }
-  .svg { /*как изменить размер svg?*/
+  .image { /*как изменить размер svg?*/
     width: 343px;
     height: 236px;
   }
