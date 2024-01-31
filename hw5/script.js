@@ -55,8 +55,10 @@ function getMin (a, b) {
       num = Number(num); //Преобразуем строку в число
       if (isNaN(num)) {
           return `Переданный параметр не является числом`;
-      } else {return `${num} d re,t hfdyztncz ${num **3}`}
-  }
+      } else {
+        return `${num} в кубе равняется ${num ** 3}`;
+     }
+    }
   console.log(cubeNumber());
   
   
