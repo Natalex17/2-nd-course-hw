@@ -74,12 +74,12 @@ function getMin (a, b) {
   // 
   const circle1 = {
       radius: 5,    //задаем радиус круга
-      getArea: getArea  //ссылка на функцию вычисления Р
-     // getPerimeter, //ссылка на вычисления периметра
+      getAreal,  //ссылка на функцию вычисления Р
+      getPerimeter, 
   };
   
   const circle2 = {
       radius: 10,    //задаем радиус круга
-      getAreal,  //ссылка на функцию вычисления Р
-      getPerimeter, //ссылка на вычисления периметра
+      getAreal, 
+      getPerimeter, 
   };
