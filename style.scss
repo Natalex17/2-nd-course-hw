@@ -191,10 +191,10 @@
   
   
   @media (max-width: 768px) {
-    .center {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+   .center {
+    padding-right: 16px;
+    padding-left: 16px;
+   } 
     .top__content {
       width: 343px;
     }
@@ -235,8 +235,9 @@
       width: 343px;
     }
     .season{
-      height: 653.61px;
+      display: block;
       text-align: center;
+      
     }
     .season-box{
       margin-top: 51px;
@@ -258,12 +259,15 @@
       height: 66px;
     }
     .game-box {
-      width: 343px;
-      height: 236px;
+      padding-left: 0%;
+      padding-right: 0%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 66px;
+      width: 343px;
+      height: 236px;
     }
         .image{   
       width: 343px;
