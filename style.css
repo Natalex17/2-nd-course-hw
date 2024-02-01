@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -200,6 +201,7 @@ a {
   .center {
     padding-right: 16px;
     padding-left: 16px;
+    overflow-x: hidden; /*для горизонтального сролла, убрать */
   }
   .top__content {
     width: 343px;
