@@ -79,3 +79,4 @@ console.log(User [info]);
 //10
 let name = String(prompt("Как ваше имя"));
 alert('Привет,' + name);
+

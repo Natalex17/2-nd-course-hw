@@ -57,6 +57,5 @@ switch (monthNumber) {
         break;
                         
 default: alert(`Неизвестный месяц`)
-
     }
     

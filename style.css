@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +67,17 @@ a {
   line-height: 32px;
 }
 
-.header__input {
+.menu__link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5p;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5p;
+}
+
+.btn {
   border-radius: 30px;
   background: #9C0332;
   border: 1px solid #9C0332;
@@ -84,12 +95,13 @@ a {
   color: #FFF;
 }
 
-.header__input::-moz-placeholder {
+
+.btn::-moz-placeholder {
   color: #FFF;
   text-align: center;
 }
 
-.header__input::placeholder {
+.btn::placeholder {
   color: #FFF;
   text-align: center;
 }
@@ -142,10 +154,55 @@ a {
   background-image: url(img/game3.jpg);
 }
 
+.season {
+  background-color: #000915;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.season-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 584px;
+  height: 236px;
+  margin-right: 135px;
+  margin-top: 282px;
+}
+
+.heading {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.season-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #FFF;
+}
+
+.image {
+  width: 485px;
+  height: 334px; /*"viewBox="0 0 485 334*/
+}
+
+.game-box {
+  width: 485px;
+  height: 333px;
+  margin-top: 233px;
+}
+
 @media (max-width: 768px) {
   .center {
-    padding-left: 16px;
     padding-right: 16px;
+    padding-left: 16px;
+    overflow-x: hidden; /*для горизонтального сролла, убрать */
   }
   .top__content {
     width: 343px;
@@ -176,7 +233,7 @@ a {
     font-size: 14px;
     font-weight: 700;
   }
-  .header__input {
+  .btn {
     margin-left: 70.47px;
     margin-right: 70.47px;
   }
@@ -186,4 +243,41 @@ a {
   .game__item {
     width: 343px;
   }
-
+  .season {
+    display: block;
+    text-align: center;
+  }
+  .season-box {
+    margin-top: 51px;
+  }
+  .heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+  .season-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+    height: 66px;
+  }
+  .game-box {
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 66px;
+    width: 343px;
+    height: 236px;
+  }
+  .image {
+    width: 343px;
+    height: 236px;
+  }
+}/*# sourceMappingURL=style.css.map */
