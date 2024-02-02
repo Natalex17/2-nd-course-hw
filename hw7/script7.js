@@ -23,9 +23,9 @@ console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр']
  
  //3 РАБОТАЕТ !!!
 
- function getRandomInt(min, max) {
+ function getRandomInt0(min, max) {
      return Math.round(32.58884); //до ближ. целого 33 почему NAN?
-    }  console.log (getRandomInt());
+    }  console.log (getRandomInt0());
 
   function getRandomInt1 (max) {
     return Math.ceil(32.58884);  // до большего целого 33
