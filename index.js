@@ -22,15 +22,15 @@ function seasonsBtn() {
     words = words.sort(() => Math.random() - 0.5);
     alert(words);
     let wordsfirst = prompt (`Назовите первое слово`).
-    toLowerCase;
+    toLowerCase();
     let wordsLast = prompt (`Назовите последнее слово`).
-    toLowerCase;
+    toLowerCase();
 
-    if (wordsfirst === words[0] || wordsLast === words[words.length - 1])
+    if (wordsfirst === words [0] || wordsfirst === words[- 1])
      {
         alert `Это правильный ответ!`;
 
-    } else if (wordsLast === words[0] || wordsfirst === words[words.length - 1] ) {
+    } else if (wordsLast !== words[0] || wordsLast !== words[- 1] ) {
         alert `Вы не угадали!`;                             
     } 
     else {
