@@ -1,4 +1,6 @@
-@media (max-width: 375) {
+
+@media (max-width: 768px) {
+
   .top__content {
     display: none;
   }
@@ -35,3 +37,4 @@
     width: 343px;
   }
 }/*# sourceMappingURL=mobile.css.map */
+
