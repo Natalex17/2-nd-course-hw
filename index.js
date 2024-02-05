@@ -21,20 +21,21 @@ function seasonsBtn() {
     let words = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
     words = words.sort(() => Math.random() - 0.5);
     alert(words);
-    let wordsfirst = prompt (`Назовите первое слово`).
-    toLowerCase();
-    let wordsLast = prompt (`Назовите последнее слово`).
-    toLowerCase();
 
-    if (wordsfirst === words [0] || wordsfirst === words[- 1])
+    let wordsfirst = prompt (`Назовите первое слово`);
+   
+    let wordsLast = prompt (`Назовите последнее слово`);
+   
+
+    if (wordsfirst === words [0] && wordsLast === words[words.length- 1])
      {
         alert `Это правильный ответ!`;
 
-    } else if (wordsLast !== words[0] || wordsLast !== words[- 1] ) {
-        alert `Вы не угадали!`;                             
+    } else if (wordsfirst === words[0] || wordsLast === words[words.length - 1]) {
+        alert `А счастье было так близко!`;                             
     } 
     else {
-         alert `А счастье было так близко!`;
+         alert `Вы не угадали!`;
         }
     
     }
