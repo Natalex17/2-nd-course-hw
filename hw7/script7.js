@@ -14,7 +14,7 @@ console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр']
  //3 РАБОТАЕТ !!!
 
  function getRandomInt0(min, max) {
-     return Math.round(32.58884); //до ближ. целого 33 почему NAN?
+     return Math.round(32.58884); 
     }  console.log (getRandomInt0());
 
   function getRandomInt1 (max) {
@@ -69,14 +69,14 @@ function getRandomInt(min, max) {
 
   // 8 
 
-  let currentDate = new Date();
-  console.log(currentDate);  //ВОЗМОЖНО РАСМСМОТРЕТЬ ДРУГОЙ СПОСОБ
+  console.log (new Date());
+    
 
 
   
 //9 Работает
 
-let currentDate1 = new Date();
+let currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
 
 console.log(currentDate); //... апрель 2024
