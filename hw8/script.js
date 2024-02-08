@@ -31,22 +31,61 @@ const folk = [
      {name: 'Глеб', gender: 'male'},
      {name: 'Анна', gender: 'female'},
      {name: 'Олег', gender: 'male'},
-     {name: 'Оксана', gender: 'female'}
-  ];
+     {name: 'Оксана', gender: 'female'}];
   
   console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
   
   //3 Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
-  let currentDay = new Date();
+  let counter = 0;
 
-const timer = (currentDay) => {
-    const timer = setInterval(() => {        console.log(currentDay);
-    }, 1000);
+const interval = setInterval(() => {   
+       console.log(new Date()); //текущее время
+       counter += 3;  
+       if (counter >= 30) {    //остановка интервала
+        clearInterval(interval);
+      
+    console.log("30 секунд прошло");
+       }
+  }, 3000);
 
-    setTimeout(() => {
-    clearInterval(timer)  
-    console.log("30 секунд прошло")
-  }, 30000);
+  //4 
+  function showAd() {
+    console.log('Привет, Сенсей!');
+  }
+  
+  setTimeout(showAd, 1000 * 60);
+//
+
+  function delayForSecond0(callback) {
+                                    // Код писать можно только внутри этой функции
+    setTimeout(callback, 1000 * 60);
+ }
+ 
+ delayForSecond0(function () {
+    console.log('Привет, Наставник!');
+ })
+ 
+
+ //5
+
+ function delayForSecond(cb) {
+  setTimeout(() => {
+      console.log('Прошла одна секунда');
+      if(cb) { 	cb(); }
+
+  }, 1000)
 }
+                             // Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+  console.log(`Привет, ${name}!`);
+}
+// Код выше менять нельзя
+// Нужно изменить код ниже:
+delayForSecond(() => sayHi('Глеб'))
 
-timer(currentDay);
+
+
+
+
+
+
